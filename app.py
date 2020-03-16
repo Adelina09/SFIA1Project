@@ -92,6 +92,7 @@ def Activities_update():
         info.append(row)
     return render_template("Activities.html", title='Activities', info1=info)
 
+#test
 
 @app.route('/Activities/results', methods=['GET', 'POST']) # Results
 def Activities_results():
