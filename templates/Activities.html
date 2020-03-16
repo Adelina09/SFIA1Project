@@ -1,0 +1,96 @@
+
+{%extends "layout.html"%}
+
+    {%block body%}
+    
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="background-image: url('https://i.imgur.com/MYD0VK0.jpg'); background-size: cover;">
+
+        <div class="col-md-8 p-lg-8 mx-auto my-8">
+        
+            <h1 class="display-4 font-weight-normal">Ready for a break?</h1>
+            <p class="lead font-weight-normal">We're here to make your next holiday choice a breeze</p>
+        </br>
+        </br>
+
+
+
+            <form method="POST" action="{{url_for('Activities')}}">
+                
+                <label>Add a new activity:</label>
+                <input type = "text" name= "activ" size="20">
+                <input type = "submit">
+                
+            </form>
+            </br>
+            </br>
+            <form method="POST" action="{{url_for('Activities_delete')}}">
+                <!-- Activity <input type = "text" name= "activ" /> <br> -->
+                
+                <label>Delete an activity:</label>
+                    <select name= "activ">
+                    {%for i in info1%}
+                        <option >{{ i[1] }}</option>
+                    {%endfor%}
+                    </select>
+                <input type = "submit">
+                
+            </form>
+            </br>
+            </br>
+
+            <form method="POST" action="{{ url_for('Activities_update') }}"></br>
+                <label>Change Name From:</label>
+                <select name= "activ">
+                {%for i in info1%}
+                    <option >{{ i[1] }}</option>
+                {%endfor%}
+                </select>
+                
+                <!-- Change Name From <input type = "text" name= "initialname" /> <br> -->
+                To <input type = "text" name= "finalname" />   
+                <input type = "submit">
+                
+            </form>
+            </br>
+            </br>
+            <form action="{{ url_for('Activities_display') }}" method="POST">
+
+                <label>Select an activity:</label>
+                <!-- <select multiple> -->
+                <select name="Name">    
+                {%for i in info1%}
+                  <option value="{{ i[1] }}">{{ i[1] }}</option>
+                {%endfor%}
+                </select>
+            
+                <input type="submit">
+            </form>
+            </br>
+            </br>          
+                <table align='center'>
+                  <col width=60%>
+                  <col width=90%>
+                  <col width=60%>
+                  
+                  <tr>
+                  <th >Your ideal location is awaiting for you in one of these destinations:</th>
+                  </tr>
+                  
+                  {%for i in desired %}
+                  <tr>
+                    <td> <a href="/Locations">{{ i }} </a></td>
+                  </tr>
+                  {% endfor %}
+
+
+
+
+
+
+        </div>
+        </div>
+    
+
+
+
+    {%endblock%}
