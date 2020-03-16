@@ -41,7 +41,7 @@ def Activities():
         info.append(row)
     
     return render_template("Activities.html", title='Activities', info1=info)
-
+#test
 
 @app.route('/Activities/delete', methods=['GET', 'POST']) #delete function
 def Activities_delete():
