@@ -12,8 +12,6 @@ app.config['MYSQL_PASSWORD']=os.environ['MYSQLPASSWORD']
 app.config['MYSQL_DB']=os.environ['MYSQLDB']
 
 
-# test 
-
 @app.route('/')
 def home():
     return render_template('page.html', title='Home')
