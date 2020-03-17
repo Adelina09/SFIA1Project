@@ -10,7 +10,6 @@ pipeline{
         }
         stage ('Testing') {
             steps {
-                sh 'source /var/lib/jenkins/workspace/pipeline1/venv/bin/activate'
                 sh 'coverage run -m pytest /test/testing.py'
                 sh 'coverage report -m'
 
