@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /var/lib/jenkins/workspace/pipeline1/venv/bin/activate
+source venv/bin/activate
 
 pip3 install flask
 
