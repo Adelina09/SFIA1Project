@@ -10,7 +10,6 @@ pipeline{
         }
         stage ('Testing') {
             steps {
-                sh 'pytest ./test/testing.py'
                 sh 'coverage run -m pytest ./test/testing.py'
                 sh 'coverage report -m '
 
