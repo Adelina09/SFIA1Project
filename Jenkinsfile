@@ -8,9 +8,12 @@ pipeline{
                 sh './script/make_service.sh'
             }
         }
+        stage ('Wait for installation'){
+            sh 'sleep 120'
+        }
         stage ('Testing') {
             steps {
-                sh 'coverage run -m pytest /test/testing.py'
+                sh 'coverage run -m pytest ./test/testing.py'
                 sh 'coverage report -m'
 
             }
