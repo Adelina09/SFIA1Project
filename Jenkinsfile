@@ -11,12 +11,13 @@ pipeline{
         stage('Wait for installation'){
             steps{
                 
-                sh 'sleep 120'
+                sh 'sleep 60'
                
             }
         }
         stage('Testing') {
             steps {
+                sh 'source venv/bin/activate'
                 sh 'coverage run -m pytest ./test/testing.py'
                 sh 'coverage report -m'
 
