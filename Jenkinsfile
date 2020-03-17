@@ -10,7 +10,7 @@ pipeline{
         }
         stage ('Testing') {
             steps {
-                sh 'source/venv/bin/activate'
+                sh 'source ./venv/bin/activate'
                 sh 'coverage run -m pytest ./test/testing.py'
                 sh 'pytest ./test/testing.py'
 
