@@ -9,15 +9,11 @@ pipeline{
             }
         }
         stage('Wait for installation'){
-<<<<<<< Updated upstream
             steps{
                 
                 sh 'sleep 60'
                
             }
-=======
-            sh 'sleep 120'
->>>>>>> Stashed changes
         }
         stage('Testing') {
             steps {
