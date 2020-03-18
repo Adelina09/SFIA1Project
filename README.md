@@ -38,7 +38,7 @@ The project  itself has been split in 4 major sprints(lasting a week each). In o
 
 ![alt text][trello1]
  
-[trello1]:  https://i.imgur.com/q5L3LDJ.png?1 " Initial Trello Board"
+[trello1]:  https://i.imgur.com/erAaXmk.png " Initial Trello Board"
  
 As the weeks went by, the tasks started to shift across into the Progress and eventually Done tab. I have chose to include only the initial and final board as the sprint differentiation has been made clear with the aid of colour coding. 
 
@@ -46,7 +46,7 @@ The project has been considered complete and ready to be delivered when all task
  
  ![alt text][trello2]
  
-[trello2]:  https://i.imgur.com/Go1kb05.png?1 " Final Trello Board"
+[trello2]:  https://i.imgur.com/1Ue64qE.png " Final Trello Board"
  
  
  <a name="riskassessment"></a>
