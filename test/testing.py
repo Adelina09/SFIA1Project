@@ -52,9 +52,6 @@ def test_insert():                                              #insert test
         cur.execute('SELECT * FROM Activity')
         new_num_records=cur.fetchall()
         cur.close()
-    recordb = len(num_of_records)                               #finds length of the records list before insertion
-    new_id = new_num_records[recordb-1][0]+1                     #finds the id of the previous record and + 1 for autoincrement new record
-    recorda = len(new_num_records) 
     assert num_of_records[len(num_of_records)-1] != new_num_records[len(new_num_records)-1]
 
 
