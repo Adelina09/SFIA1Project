@@ -55,8 +55,10 @@ def test_insert():                                              #insert test
     recordb = len(num_of_records)                               #finds length of the records list before insertion
     new_id = new_num_records[recordb-1][0]+1                     #finds the id of the previous record and + 1 for autoincrement new record
     recorda = len(new_num_records) 
-    assert (new_id,'test') == new_num_records[recorda-1]  
+    assert num_of_records[len(num_of_records)-1] != new_num_records[len(new_num_records)-1]
 
+
+    
 def test_delete():                                              #delete test
     with app.app_context():
         cur= mysql.connection.cursor()
