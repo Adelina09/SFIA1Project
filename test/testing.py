@@ -53,7 +53,21 @@ def test_insert():                                              #insert test
         new_num_records=cur.fetchall()
         cur.close()
     recordb = len(num_of_records)                               #finds length of the records list before insertion
-    new_id = num_of_records[recordb-1][0]+1                     #finds the id of the previous record and + 1 for autoincrement new record
+    new_id = new_num_records[recordb-1][0]+1                     #finds the id of the previous record and + 1 for autoincrement new record
     recorda = len(new_num_records) 
-    assert (new_id ,'test') == new_num_records[recorda-1]  
+    assert (new_id,'test') == new_num_records[recorda-1]  
 
+def test_delete():                                              #delete test
+    with app.app_context():
+        cur= mysql.connection.cursor()
+        cur.execute('SELECT * FROM Activity')                   #tests made on the table used for CRUD
+        num_of_records=cur.fetchall()
+        cur.execute('DELETE FROM Activity WHERE ID= %s', [int(num_of_records[len(num_of_records)-1][0])])  #delete all entries in the table that have the name 'test'
+        mysql.connection.commit()
+        cur.execute('SELECT * FROM Activity')
+        new_num_records=cur.fetchall()
+        cur.close()
+    assert num_of_records[len(num_of_records)-1][0] != new_num_records[len(new_num_records)-1][0]
+
+
+        # cur.execute("Delete from MreviewTable where review_id = %s",[int(records_before[len(records_before)-1][0])])
