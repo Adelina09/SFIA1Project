@@ -32,16 +32,21 @@ This specific application lets the user input a number of preferred holiday acti
 
 As shown in  the figure below, Trello has been used to keep track of the progress across its duration.
 
-The Project Backlog contais the user and developer stories, as it can be observed in the figure below. Moving on from these, the project has been split in 4 sprints(lasting a week each) represented by various colours; green being the first sprint and red being the last sprint. 
+The project started by defining the user stories, which have been added tas a reminder of the project scope and its deliverables. 
 
-Each sprint has been split into a number of tasks, which have moved across the board from the tasks tab, to in progress and eventually to done. The tasks are considered done when they satisfy the user stories. the image below represents the project status in its fourth week. As it can be observed, most tasks are resting in the done category, with little tasks still left in progress and in the tasks tab. These will get done over the course of the last week of the project. 
+The project  itself has been split in 4 major sprints(lasting a week each). In order to make tracking of progress easier and to monitor the time left until the deadline, the sprints have been assigned different colours starting with green, which represents the first sprint and ending with red, which represents the last sprint. The image below represents the Trello board at the beginning of the project, right after the sprints have been divided into individual tasks. 
 
-The bugs tab at the far right of the project represents the issues encountered throughout the project. They have either been overcome, or the project scope has been changed to fit the minimum viable product. 
-   
+![alt text][trello1]
  
- ![alt text][trello]
+[trello1]:  https://i.imgur.com/q5L3LDJ.png?1 " Initial Trello Board"
  
-[trello]:  https://i.imgur.com/ASrA8oe.png "Trello Board"
+As the weeks went by, the tasks started to shift across into the Progress and eventually Done tab. I have chose to include only the initial and final board as the sprint differentiation has been made clear with the aid of colour coding. 
+
+The project has been considered complete and ready to be delivered when all tasks have moved into the Done tab, leaving no task left unfinished. These tasks tasks themselves have been considered done when they fulfill the user stories. A tab that has appeared throughout the project has been the Bugs tab, where various issues have been added. The image below represents the finished project, just before delivery.
+ 
+ ![alt text][trello2]
+ 
+[trello2]:  https://i.imgur.com/Go1kb05.png?1 " Final Trello Board"
  
  
  <a name="riskassessment"></a>
