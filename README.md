@@ -35,13 +35,13 @@ This specific application lets the user input a number of preferred holiday acti
 
 As shown in  the figure below, Trello has been used to keep track of the progress across its duration.
 
-The project started by defining the user stories, which have been added tas a reminder of the project scope and its deliverables. 
+The project started by defining the user stories, which have been added as a reminder of the project scope and its deliverables, hence serving the role of product backlog as well. 
 
 The project  itself has been split in 4 major sprints(lasting a week each). In order to make tracking of progress easier and to monitor the time left until the deadline, the sprints have been assigned different colours starting with green, which represents the first sprint and ending with red, which represents the last sprint. The image below represents the Trello board at the beginning of the project, right after the sprints have been divided into individual tasks. 
 
 ![alt text][trello1]
  
-[trello1]:  https://i.imgur.com/erAaXmk.png " Initial Trello Board"
+[trello1]:  https://i.imgur.com/pMVApzY.png " Initial Trello Board"
  
 As the weeks went by, the tasks started to shift across into the Progress and eventually Done tab. I have chose to include only the initial and final board as the sprint differentiation has been made clear with the aid of colour coding. 
 
@@ -49,7 +49,7 @@ The project has been considered complete and ready to be delivered when all task
  
  ![alt text][trello2]
  
-[trello2]:  https://i.imgur.com/1Ue64qE.png " Final Trello Board"
+[trello2]:  https://i.imgur.com/9lD41TG.png " Final Trello Board"
  
  
  <a name="riskassessment"></a>
@@ -91,6 +91,21 @@ The project has been considered complete and ready to be delivered when all task
 ### Architecture Diagram
 
 
+--Insert Architecture Diagram Here--
+
+
 
 <a name="testing"></a>
 ## 5. Testing
+
+The application has been tested using pytest. The unit testing conducted includes URL as well as database testing. The first image represents the test coverage in just the URL case, where a success of 46% can be observed. 
+
+![alt text][testingURL]
+ 
+[testingURL]:  https://i.imgur.com/hbrzU4E.png "ULR Testing coverage"
+
+The database testing has then been added to the test file, performing the tests on the select, insert and delete functions. It can be observed that the coverage percentage has now dropped to 38%. This is believed to have happened due to the addition of new libraries that need to be tested, and hence a wider testing environment has been created. 
+
+![alt text][testing]
+ 
+[testing]:  https://i.imgur.com/88Z5Byu.png "Testing coverage after adding the DB testing"
