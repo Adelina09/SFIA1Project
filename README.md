@@ -87,6 +87,11 @@ The project has been considered complete and ready to be delivered when all task
 
 [ERDNew]: https://i.imgur.com/pWTDKxl.png  "New ERD Diagram"
 
+
+
+ 
+
+
 <a name="#architecturediagram"></a>
 ### Architecture Diagram
 
@@ -104,12 +109,17 @@ The application has been tested using pytest. The unit testing conducted include
  
 [testingURL]:  https://i.imgur.com/hbrzU4E.png "ULR Testing coverage"
 
-The database testing has then been added to the test file, performing the tests on the select, insert and delete functions, adding another 3 test functions to the file. It can be observed that the coverage percentage has now dropped to 38%. This is believed to have happened due to the addition of new libraries that need to be tested, and hence due to a wider testing environment. 
+The database testing has then been added to the test file, performing the tests on the select, insert and delete functions, adding another 3 test functions to the file. It can be observed that the coverage percentage has now dropped to 38%. This is believed to have happened due to the addition of new libraries that need to be tested, and hence due to a much larger testing environment. 
 
 ![alt text][testing]
  
 [testing]:  https://i.imgur.com/88Z5Byu.png "Testing coverage after adding the DB testing"
 
+
 <a name="deployment"></a>
 ## 6. Deployment
+
+The deployment of this application has been done through the use of Jenkins Pipeline. A GitHub webhook has also been used, to ease the build process when changes are made to the GitHub repository. With the use of the Pipeline, Jenkins is able to install all the necessary packages needed to run the application, wait for the packages to be installed, deploy the application as a service and finally perform the tests mentioned in the section above. The results of these tests are printed in the console output of Jenkis, giving the user the ability to improve the testing stage if results are not satisfactory.
+
+
 
