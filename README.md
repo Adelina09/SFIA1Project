@@ -10,11 +10,14 @@ Projet aiming to suggest a holiday destination idea based on user input of activ
 4. [Architecture](#architecture)
    + [Entity Relationship Diagrams(ERDs)](#ERD)
    + [Architecture Diagram](#architecturediagram)
-5. [Design Considerations](#design)
+   
+5. [Testing](#testing)
 
-6. [Testing](#testing)
+6. [Deployment](#deployment)
 
-7. [Implementations](#implementations)
+7. [Front End Design](#design)
+
+8. [Future Improvements](#improvements)
 
 
 <a name="brief"></a>
@@ -84,5 +87,10 @@ The project has been considered complete and ready to be delivered when all task
 
 [ERDNew]: https://i.imgur.com/pWTDKxl.png  "New ERD Diagram"
 
+<a name="#architecturediagram"></a>
+### Architecture Diagram
 
 
+
+<a name="testing"></a>
+## 5. Testing
