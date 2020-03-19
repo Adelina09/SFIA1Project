@@ -98,14 +98,18 @@ The project has been considered complete and ready to be delivered when all task
 <a name="testing"></a>
 ## 5. Testing
 
-The application has been tested using pytest. The unit testing conducted includes URL as well as database testing. The first image represents the test coverage in just the URL case, where a success of 46% can be observed. 
+The application has been tested using pytest. The unit testing conducted includes URL as well as database testing. The first image represents the test coverage in just the URL case, where a success of 46% can be observed. A number of 4 functions have been tested, these including checks for existing as well as checks for inexistent pages. 
 
 ![alt text][testingURL]
  
 [testingURL]:  https://i.imgur.com/hbrzU4E.png "ULR Testing coverage"
 
-The database testing has then been added to the test file, performing the tests on the select, insert and delete functions. It can be observed that the coverage percentage has now dropped to 38%. This is believed to have happened due to the addition of new libraries that need to be tested, and hence a wider testing environment has been created. 
+The database testing has then been added to the test file, performing the tests on the select, insert and delete functions, adding another 3 test functions to the file. It can be observed that the coverage percentage has now dropped to 38%. This is believed to have happened due to the addition of new libraries that need to be tested, and hence due to a wider testing environment. 
 
 ![alt text][testing]
  
 [testing]:  https://i.imgur.com/88Z5Byu.png "Testing coverage after adding the DB testing"
+
+<a name="deployment"></a>
+## 6. Deployment
+
