@@ -92,7 +92,7 @@ The project has been considered complete and ready to be delivered when all task
  
 
 
-<a name="#architecturediagram"></a>
+<a name="architecturediagram"></a>
 ### Architecture Diagram
 
 
