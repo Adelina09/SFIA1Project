@@ -121,5 +121,12 @@ The database testing has then been added to the test file, performing the tests 
 
 The deployment of this application has been done through the use of Jenkins Pipeline. A GitHub webhook has also been used, to ease the build process when changes are made to the GitHub repository. With the use of the Pipeline, Jenkins is able to install all the necessary packages needed to run the application, wait for the packages to be installed, deploy the application as a service and finally perform the tests mentioned in the section above. The results of these tests are printed in the console output of Jenkis, giving the user the ability to improve the testing stage if results are not satisfactory.
 
+## Technologies Used:
 
-
++ Python - Coding in Flask
++ Flask - Framework
++ [Jenkins](http://35.197.207.209:8080/ "Jenkins")- CI/CD Server
++ Testing - Pytest
++ [Github Project](https://github.com/Adelina09/SFIA1Project "GitHub Repository") - Version Control System
++ [Trello Board](https://trello.com/b/CGymZiIU/travel-agent "Trello Page") - Project Tracking Board
++ [Google Cloud Platform](https://console.cloud.google.com/home/dashboard?project=pivotal-expanse-268611 "GCP") (MySQL GCP DB, GCP VM)
