@@ -130,3 +130,19 @@ The deployment of this application has been done through the use of Jenkins Pipe
 + [Github Project](https://github.com/Adelina09/SFIA1Project "GitHub Repository") - Version Control System
 + [Trello Board](https://trello.com/b/CGymZiIU/travel-agent "Trello Page") - Project Tracking Board
 + [Google Cloud Platform](https://console.cloud.google.com/home/dashboard?project=pivotal-expanse-268611 "GCP") (MySQL GCP DB, GCP VM)
+
+
+
+<a name="design"></a>
+## 7. Front End Design
+
+As previously mentioned, the table's structure in the database had to be changed to satisfy the front end design planned. The image below comprises of the entire content of the second table. The name of the locations is at the top of each section, as well as a short description and a visual representation of the location. This had to be part of the same table, as the back end of the application is using a loop to iterate through the contents of each table entry, thus placing each entry in its own section.  
+
+![alt text][Locations]
+
+[Locations]: https://i.imgur.com/VINuZ8o.png  "Locations page"
+
+
+
+
+
