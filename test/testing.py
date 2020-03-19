@@ -1,6 +1,6 @@
 import urllib3
 
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask
 from flask_mysqldb import MySQL
 import os
 
@@ -67,6 +67,3 @@ def test_delete():                                              #delete test
         new_num_records=cur.fetchall()
         cur.close()
     assert num_of_records[len(num_of_records)-1][0] != new_num_records[len(new_num_records)-1][0]
-
-
-        # cur.execute("Delete from MreviewTable where review_id = %s",[int(records_before[len(records_before)-1][0])])
