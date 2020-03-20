@@ -136,13 +136,20 @@ The deployment of this application has been done through the use of Jenkins Pipe
 <a name="design"></a>
 ## 7. Front End Design
 
-As previously mentioned, the table's structure in the database had to be changed to satisfy the front end design planned. The image below comprises of the entire content of the second table. The name of the locations is at the top of each section, as well as a short description and a visual representation of the location. This had to be part of the same table, as the back end of the application is using a loop to iterate through the contents of each table entry, thus placing each entry in its own section.  
+As previously mentioned, the table's structure in the database had to be changed to satisfy the front end design planned. The right hand side of the image below comprises of the entire content of the second table. The name of the locations is at the top of each section, as well as a short description and a visual representation of the location. This had to be part of the same table, as the back end of the application is using a loop to iterate through the contents of each table entry, thus placing each entry in its own section. 
 
-![alt text][Locations]
-
-[Locations]: https://i.imgur.com/VINuZ8o.png  "Locations page"
+The Home page of the website is represented on the left hand side of the picture below. It contains some of the holiday destinations as it is intended to give the user the motivation to use the app, showing some of the locations that could be suggested based on their input activity. 
 
 
+![alt text][HomeAndLocations]
 
+[HomeAndLocations]: https://i.imgur.com/5XQ1A3n.png  "Home and Locations pages"
+
+The picture below represents the main page where the brief of the project is fulfilled. A new activity can be added to the database, it can be deleted, as well as it can be edited. The user then has the option to select an activity from the inputted list, based on which a number of possible destinations are then presented back to the user.
+
+
+![alt text][Activities]
+
+[Activities]: https://i.imgur.com/SE0WAS5.png  "Activities"
 
 
