@@ -159,3 +159,9 @@ The picture below represents the main page where the brief of the project is ful
 [Activities]: https://i.imgur.com/SE0WAS5.png  "Activities"
 
 
+<a name="improvements"></a>
+## 8. Future Improvements
+
+As mentioned throughout this document, the initial application intended to deliver a many to many relationship between the databases. This is now postponed, and added as a future improvement of the actual project. A lot more unit testing is needed in order to figure the exact connection between the number of libraries tested and the result of the coverage report in order to improve this in the future. Minor modifications of the front end design are also wished to be added to the project in a future update. 
+
+
