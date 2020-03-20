@@ -119,7 +119,13 @@ The database testing has then been added to the test file, performing the tests 
 <a name="deployment"></a>
 ## 6. Deployment
 
-The deployment of this application has been done through the use of Jenkins Pipeline. A GitHub webhook has also been used, to ease the build process when changes are made to the GitHub repository. With the use of the Pipeline, Jenkins is able to install all the necessary packages needed to run the application, wait for the packages to be installed, deploy the application as a service and finally perform the tests mentioned in the section above. The results of these tests are printed in the console output of Jenkis, giving the user the ability to improve the testing stage if results are not satisfactory.
+The deployment of this application has been done through the use of Jenkins Pipeline, represented in the image below. A GitHub webhook has also been used, to ease the build process when changes are made to the GitHub repository. With the use of the Pipeline, Jenkins is able to install all the necessary packages needed to run the application, wait for the packages to be installed, deploy the application as a service and finally perform the tests mentioned in the section above. The results of these tests are printed in the console output of Jenkis, giving the user the ability to improve the testing stage if results are not satisfactory.
+
+
+![alt text][DeploymentPipeline]
+
+[DeploymentPipeline]: https://i.imgur.com/3Yd9tCP.png  "Deployment pipeline"
+
 
 ## Technologies Used:
 
