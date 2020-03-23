@@ -9,7 +9,6 @@ Projet aiming to suggest a holiday destination idea based on user input of activ
 
 4. [Architecture](#architecture)
    + [Entity Relationship Diagrams(ERDs)](#ERD)
-   + [Architecture Diagram](#architecturediagram)
    
 5. [Testing](#testing)
 
@@ -86,18 +85,6 @@ The project has been considered complete and ready to be delivered when all task
 ![alt text][ERDNew]
 
 [ERDNew]: https://i.imgur.com/pWTDKxl.png  "New ERD Diagram"
-
-
-
- 
-
-
-<a name="architecturediagram"></a>
-### Architecture Diagram
-
-
---Insert Architecture Diagram Here--
-
 
 
 <a name="testing"></a>
